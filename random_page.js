@@ -95,8 +95,8 @@ The final HTML, CSS, and optional JavaScript should be comprehensive, elegant, a
 app.post("/generate-and-deploy", async (req, res) => {
   try {
     const prompt = req.body.prompt;
-    const netlifyToken = req.headers["NETLIFY-AUTH-TOKEN"];
-    const netlifySiteId = req.headers["NETLIFY-SITE-ID"];
+    const netlifyToken = req.headers["x-netlify-token"];
+    const netlifySiteId = req.headers["x-netlify-site-id"];
 
     if (!prompt) return res.status(400).json({ error: "Missing prompt in body." });
     if (!netlifyToken) return res.status(400).json({ error: "Missing Netlify token." });
