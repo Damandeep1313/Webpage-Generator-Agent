@@ -92,7 +92,7 @@ Ensure that the page feels like a high-end, professional business website design
 The final HTML, CSS, and optional JavaScript should be comprehensive, elegant, and designed with high-level attention to detail. It should reflect the quality and professionalism that would attract top-tier investors.
 `;
 
-app.post("/generate-and-deploy", async (req, res) => {
+app.post("/generating-code", async (req, res) => {
   try {
     const prompt = req.body.prompt;
     const netlifyToken = req.headers["x-netlify-token"];
