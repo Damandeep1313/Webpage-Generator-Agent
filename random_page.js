@@ -90,6 +90,8 @@ Footer with contact information, social media links, and any other essential inf
 Ensure that the page feels like a high-end, professional business website designed to attract investors.
 
 The final HTML, CSS, and optional JavaScript should be comprehensive, elegant, and designed with high-level attention to detail. It should reflect the quality and professionalism that would attract top-tier investors.
+
+You have to just give the code no extra information in the response.This must be followed very strictly.
 `;
 
 app.post("/generate-and-deploy", async (req, res) => {
